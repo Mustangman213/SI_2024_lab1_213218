@@ -1,0 +1,57 @@
+commit 696e7ab6ef3da8bfa8a559325f39c83ad9a48314 (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: Stefan <stefan.frckovski@gmail.com>
+Date:   Sun Mar 24 19:41:24 2024 +0100
+
+    Call method makeBigStringFrom in main class
+
+commit e30f35b35a1d1c2173d80ac9d28ae63c6b52e543
+Author: Stefan <stefan.frckovski@gmail.com>
+Date:   Sun Mar 24 19:29:58 2024 +0100
+
+    Fix wrong condition in makeBigStringFrom
+
+commit d7b488761d360a2d755a11a4efd57ef18c8fce23
+Author: Stefan <stefan.frckovski@gmail.com>
+Date:   Sun Mar 24 19:58:39 2024 +0100
+
+    Merge bug1 into master
+
+commit a048d681e9fa99792e1ba20f4552449b3449f93a (origin/bug1, bug1)
+Author: Stefan <stefan.frckovski@gmail.com>
+Date:   Sun Mar 24 19:37:11 2024 +0100
+
+    Call method filterOddLengthStrings in main class
+
+commit 80229db9d217ff3482e82223d787bc44f4a8fa04
+Author: Stefan <stefan.frckovski@gmail.com>
+Date:   Sun Mar 24 19:25:34 2024 +0100
+
+    Fix wrong condition in filterOddLengthStrings
+
+
+
+
+commit 409052d7d853fe76d30e17368d2a9bbc61c4cfbf
+Author: Stefan <stefan.frckovski@gmail.com>
+Date:   Sun Mar 24 19:10:38 2024 +0100
+
+    Add starter code
+
+commit b9490c6b36d11f6d769c07e71f5eb97a5acd634c
+Author: Stefan <stefan.frckovski@gmail.com>
+Date:   Sun Mar 24 19:10:12 2024 +0100
+
+    Add starter code
+
+commit 52c7d056c174b96b3f0a86bdbe0415ac6cc1b4d2
+Author: Stefan <stefan.frckovski@gmail.com>
+Date:   Sun Mar 24 19:09:47 2024 +0100
+
+    Add starter code
+
+commit 2fa8baf9bd8560d591c7fc6d8c8a0c745579526c
+Author: Stefan <stefan.frckovski@gmail.com>
+Date:   Sun Mar 24 18:51:03 2024 +0100
+
+    Initial commit
+(END)
