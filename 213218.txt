@@ -1,0 +1,83 @@
+4. mkdir imeto_na_repozitorium
+   cd imeto_na_repozitorium
+   git init
+5. git remote add origin repository_URL
+6. touch README.md
+   nano README.md
+   git add README.md
+   git commit -m "Initial commit"
+   git push origin master
+7.git add imeto_na_fajlot
+  git commit -m "Add starter code"
+8.git push origin master
+9.git checkout master
+  git checkout -b bug1
+  git checkout -b bug2
+10.git checkout bug1
+11.git add SILab1_1.java
+   git commit -m "Fix wrong condition in filterOddLengthStrings"
+12.git checkout bug2
+13.git add SILab1_2.java
+   git commit -m "Fix wrong condition in makeBigStringFrom"
+14.git checkout bug1
+15.import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class SILab1Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        List<String> list = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            list.add(sc.next());
+        }
+        
+        System.out.println(SILab1_1.filterOddLengthStrings(list));
+    }
+}
+git add SILab1Main.java
+git commit -m "Call method filterOddLengthStrings in main class"
+16.git checkout bug2
+17.import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class SILab1Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        List<String> list = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            list.add(sc.next());
+        }
+        
+        System.out.println(SILab1_2.makeBigStringFrom(list, 5)); // Примерно, minLength е поставен на 5
+    }
+}
+git add SILab1Main.java
+git commit -m "Call method makeBigStringFrom in main class"
+18.git push origin bug1 bug2
+19.git checkout master
+20.git pull origin master,git merge bug1
+fast-forward, if (el.length() % 2 != 0) { //(el.length() % 2 != 0) мораше да се замени од (el.length() % 2 == 0)//
+                result.add(el);
+            }
+git add .
+git commit -m "Merge bug1 into master"
+21.git push origin master
+22.git checkout bug2
+23.git rebase master, се брише - <<<<<<< HEAD ======= >>>>>>>, git add SILab1Main.java, git rebase --continue
+24.git checkout master
+25.git merge bug2, Fast-forward
+ SILab1Main.java | 3 ++-
+ SILab1_2.java   | 7 ++++---
+ 2 files changed, 6 insertions(+), 4 deletions(-)
+26.git push origin master
+27.touch log.txt, копираме од git log и ги ставаме во logs.txt со nano log.txt, git add log.txt, git commit -m "Final commit", touch 213218.txt, nano 213218.txt, git add 213218.txt, git commit -m "Final commit"
